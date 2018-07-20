@@ -120,7 +120,7 @@
 </div>
 <h2 class="text-center">Just Click Below To Get Started</h2>
             <div class="head-btn animated animated text-center" style="visibility: visible; animation-name: fadeInLeft; margin-top:40px;">
-							<a href="https://goo.gl/forms/lqHctCtlRgpYpY8V2" class="btn-primary btn-md">Yes, Let's Do It!</a>
+							<a onclick="goog_report_conversion ('https://goo.gl/forms/lqHctCtlRgpYpY8V2');" href="https://goo.gl/forms/lqHctCtlRgpYpY8V2" class="btn-primary btn-md">Yes, Let's Do It!</a>
 					</div>
         </div>
         </div>
@@ -168,6 +168,38 @@
 				});
 </script>
         
+		<!-- Google Code for CTA Click Conversion Page
+		In your html page, add the snippet and call
+		goog_report_conversion when someone clicks on the
+		chosen link or button. -->
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			goog_snippet_vars = function() {
+				var w = window;
+				w.google_conversion_id = 946134323;
+				w.google_conversion_label = "-GijCPag8oUBELO6k8MD";
+				w.google_remarketing_only = false;
+			}
+			// DO NOT CHANGE THE CODE BELOW.
+			goog_report_conversion = function(url) {
+				goog_snippet_vars();
+				window.google_conversion_format = "3";
+				var opt = new Object();
+				opt.onload_callback = function() {
+				if (typeof(url) != 'undefined') {
+					window.location = url;
+				}
+			}
+			var conv_handler = window['google_trackConversion'];
+			if (typeof(conv_handler) == 'function') {
+				conv_handler(opt);
+			}
+		}
+		/* ]]> */
+		</script>
+		<script type="text/javascript"
+			src="//www.googleadservices.com/pagead/conversion_async.js">
+		</script>
 
 
     </body>
