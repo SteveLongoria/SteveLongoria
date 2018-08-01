@@ -194,6 +194,13 @@ wallpaper,
     width: 100%;
 } }
 
+.wallpaper {
+  background-image: url("../images/oregon.jpeg");
+  background-position: center;
+  opacity: 0.2;
+  position: fixed;
+}
+
 @media screen and (min-width: 800px) {
   .content {
     align-items: center;
