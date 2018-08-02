@@ -59,6 +59,10 @@ wallpaper,
   background-size: cover;
   opacity: 0.2;
   position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  z-index: -10;
 }
 
 .content {
