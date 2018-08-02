@@ -193,9 +193,9 @@ wallpaper,
     margin-bottom: 3rem;
     width: 100%;
 }
-
+	/* 3. Specific */
 .wallpaper {
-  background-image: none;
+  height: 130%;
 } }
 
 @media screen and (min-width: 800px) {
