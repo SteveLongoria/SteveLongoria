@@ -58,7 +58,7 @@ wallpaper,
   background-position: center;
   background-size: cover;
   opacity: 0.2;
-  position: absolute;
+  position: fixed;
 }
 
 .content {
