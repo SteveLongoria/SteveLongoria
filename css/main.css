@@ -54,7 +54,6 @@ wallpaper,
 
 /* 3. Specific */
 .wallpaper {
-  background-image: url("../images/oregon.jpeg");
   background-position: center;
   background-size: cover;
   opacity: 0.2;
