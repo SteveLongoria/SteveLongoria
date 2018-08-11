@@ -14,6 +14,10 @@ html {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+p {
+	padding: 10px 15px 10px 15px;
+}
+
 a {
 color: currentColor; 
 cursor: pointer; 
