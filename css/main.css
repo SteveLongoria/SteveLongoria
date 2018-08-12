@@ -185,6 +185,10 @@ wallpaper,
   transform: scale(1.1);
 }
 
+#cspicture {
+	max-width:90%;
+}
+
 /* 4. Responsiveness */
 @media screen and (max-width: 799px) {
   .content {
