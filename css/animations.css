@@ -98,6 +98,7 @@ opacity: 0;
 .wallpaper.is-loaded {
   animation-delay: 1s;
   animation-name: zoomOut;
+  z-index: -1;
 }
 .picture.is-loaded .picture-shadow {
   animation-name: picShadow;
