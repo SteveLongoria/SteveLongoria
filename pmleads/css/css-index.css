@@ -69,7 +69,7 @@ a:hover {
     background-position:50% 50%\9 !important;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     position: relative;
     width: 100%;
     height: 100%;
@@ -78,6 +78,15 @@ a:hover {
 #menu {
 	z-index: 99;
 }
+
+#cclogos {
+		margin-top: 25px;
+	}
+	
+#secure-checkout {
+	margin-top: 15px;
+}
+
 .navbar-default {
 	background: rgba(255, 255, 255, 0.95);
 	box-shadow: 0px 0.5px 2px #cecece;
@@ -124,15 +133,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #12495f;
-	background: #12495f;
+	border: 2px solid #33a9c7;
+	background: #33a9c7;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 100px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid #12495f;
-	background: #12495f;
+	border: 2px solid #0294E3;
+	background: #0294E3;
 	color: #ffffff;
 }
 .btn-secondary {
@@ -166,7 +175,7 @@ a:hover {
 	font-size: 56px;
 	font-weight: 300;
 	color: #fff;
-	margin: 100px 0 30px 0;
+	margin: 100px 0 -65px 0;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 .landing p, .landing h2 {
@@ -252,7 +261,7 @@ a:hover {
 #intro h2 {
 	font-size: 40px;
 	font-weight: 300;
-	margin: 15px 0 15px 0;
+	margin: 15px 0 25px 0;
 }
 .intro-pic {
 	margin-top: 20px;
@@ -843,7 +852,12 @@ and (orientation : landscape) {
     font-weight: 300;
     text-align: center;
     font-size: 30px;
+    margin-bottom: 30px;
 }
+
+	h1 {
+		font-size: 2em;
+	}
 
 h4 {
     font-size: 1em;
@@ -937,7 +951,7 @@ h4 {
 		margin: 15px 0 15px 0;
 	}
 	.landing h1{
-		font-size: 40px;
+		font-size: 35px;
 		margin: 20px 0 10px 0;
 	}
 	.landing-text p {
