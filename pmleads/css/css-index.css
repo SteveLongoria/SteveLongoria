@@ -133,15 +133,15 @@ a:hover {
 	line-height: 20px;
 	padding: 15px 35px;
 	height: 50px;
-	border: 2px solid #33a9c7;
-	background: #33a9c7;
+	border: 2px solid #D81E59;
+	background: #D81E59;
 	transition: all 0.4s;
 	color: white;
 	border-radius: 100px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	border: 2px solid #0294E3;
-	background: #0294E3;
+	border: 2px solid #B2073E;
+	background: #B2073E;
 	color: #ffffff;
 }
 .btn-secondary {
@@ -349,7 +349,7 @@ a:hover {
 }
 .subscribe-form button {
 	border-radius: 0 4px 4px 0;
-	background-color: #33a9c7;
+	background-color: #d81e5b;
 	color: #ffffff;
 	font-size: 1em;
 	line-height: 52px;
@@ -365,7 +365,7 @@ a:hover {
 	height: 55px;
 }
 .subscribe-form .btn:hover {
-	background-color: #0294E3;
+	background-color: #B2073E;
 	color: #fff;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
