@@ -74,6 +74,11 @@ wallpaper,
   max-height: 20rem;
   max-width: 20rem;
 }
+
+.about {
+  max-width: 26rem;
+  }
+  
 #about {
   text-align: justify;
 }
