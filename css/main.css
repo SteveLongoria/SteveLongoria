@@ -74,8 +74,19 @@ wallpaper,
   max-height: 20rem;
   max-width: 20rem;
 }
-.about {
-  max-width: 26rem;
+#about {
+  text-align: justify;
+}
+
+.about-title {
+	font-size: 2.25rem;
+	text-align: center;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 30px 30px 30px;
 }
 
 .picture {
@@ -187,6 +198,65 @@ wallpaper,
 
 #cspicture {
 	max-width:90%;
+}
+
+footer {
+	margin: 80px 0 20px 0;
+}
+
+.footer-text {
+	text-align: center;
+}
+
+/* Newsletter Optin Form */
+
+#casestudy-cta {
+	margin: 20px 0 40px 0;
+	
+}
+
+.cs-title {
+	font-size: 1.85rem;
+	color: #ffffff;
+	margin: 10px 5px 0 5px;
+	text-align: center;
+}
+
+.cs-description {
+	font-size: 1.15rem;
+	margin: 10px 5px 0 5px;
+	color: #ffffff;
+}
+
+input, button {
+  font: inherit;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+form {
+  display: flex; 
+  grid-column: 2;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+
+input {
+  padding: 0.5em 0.75em;
+  width: 200px;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #034b5b; 
+  width: 80px;
+  &:hover {
+  	background-color: #079dbf
+  }
 }
 
 /* 4. Responsiveness */
