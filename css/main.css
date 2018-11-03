@@ -215,9 +215,12 @@ footer {
 
 /* Newsletter Optin Form */
 
+*:focus {
+    outline: none;
+}	
+
 #casestudy-cta {
 	margin: 20px 0 40px 0;
-	
 }
 
 .cs-title {
