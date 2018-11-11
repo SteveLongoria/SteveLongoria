@@ -279,6 +279,7 @@ header {
 
 nav a {
   padding: 0 15px 0 15px;
+  font-weight: 900;
 }
 
 /* 4. Responsiveness */
@@ -292,6 +293,19 @@ nav a {
   .side {
     margin-bottom: 3rem;
     width: 100%;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  justify-content: center;
+  padding-left: 23.5px;
+}
+
+nav a {
+  padding: 0 15px 0 15px;
 }
 	/* 3. Specific */
 .wallpaper {

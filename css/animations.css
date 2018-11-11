@@ -17,6 +17,7 @@ opacity: 0;
 .description,
 .contact,
 .social li,
+.nav-link,
 .links {
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
@@ -24,7 +25,8 @@ opacity: 0;
 }
 
 .contact,
-.links {
+.links,
+.nav-link {
   animation-name: bounceIn;
 }
 
@@ -125,7 +127,8 @@ opacity: 0; }
   animation-name: slideUp;
 }
 
-.social li {
+.social li,
+.nav-link {
   animation-duration: 500ms;
   animation-name: slideUp;
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
