@@ -11,6 +11,7 @@ html {
   min-height: 100vh;
   min-width: 300px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
