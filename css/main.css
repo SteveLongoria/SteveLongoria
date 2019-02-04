@@ -81,7 +81,7 @@ wallpaper,
   }
   
 #about {
-  text-align: justify;
+  text-align: left;
 }
 
 .about-title {
@@ -94,6 +94,8 @@ wallpaper,
 	display: flex;
 	flex-direction: column;
 	margin: 30px 30px 30px 30px;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .picture {
