@@ -287,7 +287,7 @@ button {
   color: #ffffff;
   cursor: pointer;
   background-color: #034b5b; 
-  width: 80px;
+  width: 92px;
   &:hover {
   	background-color: #079dbf
   }
