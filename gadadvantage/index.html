@@ -39,6 +39,94 @@
 
 				</script>
 
+				<style>
+					.monero-modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index:1;
+    }
+    .monero-modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 59rem;
+        border-radius: 0.5rem;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+    
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.unhappy-form {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+				</style>
 
     </head>
 
@@ -144,8 +232,36 @@
 												<a style="margin-bottom: 30px;" target="_blank" href="https://gumroad.com/l/tOtPm?wanted=true" class="btn-primary btn-md" data-gumroad-single-product="true" data-gumroad-product-id="tOtPm">Add To Cart</a>
 <center><img alt="Credit Card Logos" class="img-responsive roast-img" style="margin-bottom: 20px;margin-top: 30px;" src="images/cclogos.png"></center>
 				<center><img alt="Secure Checkout" class="img-responsive roast-img" src="images/secure-checkout.png"></center>
+				<div style="margin-top:50px;" class="well">
+				<h2 class="text-center">Click Below To Pay With Monero & Get Over 15% Off</h2>
+				<center><img style="cursor:pointer;" class="img-responsive roast-img monero-btn" src="images/moneroaccepted.png"/></center>
+				<div class="monero-modal">
+        <div style="padding:20px;text-align:left;" class="monero-modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Send $30 USD worth of Monero to the QR code:</h3>
+            <center><img src="images/xmrqr.png"/></center>
 
+<p style="font-size:18px;">After you've made payment, use the form below to notify me and I'll send over Google Ad Advantage within 24 hours.</p>
+            <div class="xmr-form">
+  <form style="margin-bottom:30px;" action="https://formspree.io/stevelongoria@protonmail.com" method="POST"/>
 
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="textarea" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input type="submit" value="Send">
+
+  </form>
+
+        </div>
+    </div>
+				</div>
+</div>
         <!-- /.footer -->
         <footer id="footer">
             <div class="container">
@@ -239,6 +355,26 @@
 		<!-- end Drip -->
 		
 		<script src="https://gumroad.com/js/gumroad.js"></script>	
+		
+		<script>
+		var moneroModal = document.querySelector(".monero-modal");
+    var moneroBtn = document.querySelector(".monero-btn");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        moneroModal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === moneroModal) {
+            toggleModal();
+        }
+    }
+
+    moneroBtn.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+		</script>
 
     </body>
 </html>
