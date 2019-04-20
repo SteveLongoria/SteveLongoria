@@ -259,7 +259,9 @@ input {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
   padding: 0.5em 0.75em;
-  width: 200px;
+  width: 350px;
+  height: 55px;
+  border-radius: 10px 0 0 10px;
 }
 
 button {
@@ -267,7 +269,8 @@ button {
   color: #ffffff;
   cursor: pointer;
   background-color: #034b5b; 
-  width: 92px;
+  width: 150px;
+  border-radius: 0 10px 10px 0;
   &:hover {
   	background-color: #079dbf
   }
@@ -311,6 +314,27 @@ header {
 
 nav a {
   padding: 0 15px 0 15px;
+}
+
+input {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+  padding: 0.5em 0.75em;
+  width: 200px;
+  height: 55px;
+  border-radius: 10px 0 0 10px;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #034b5b; 
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  &:hover {
+  	background-color: #079dbf
+  }
 }
 	/* 3. Specific */
 .wallpaper {
