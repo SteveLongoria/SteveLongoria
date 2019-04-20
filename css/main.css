@@ -146,10 +146,10 @@ wallpaper,
 }
 
 .button {
-  background-color: #fff;
+  background-color: #D8D86F;
   border-radius: 290486px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #061A40;
+  color: #fff;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
@@ -268,7 +268,7 @@ button {
   padding: 0.5em 0.75em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #034b5b; 
+  background-color: #D8D86F; 
   width: 150px;
   border-radius: 0 10px 10px 0;
   &:hover {
