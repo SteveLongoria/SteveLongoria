@@ -217,6 +217,18 @@ footer {
 	text-align: center;
 }
 
+.headline-text {
+			font-size: 3.5rem;
+			text-align: center;
+			
+}
+
+.subheadline-text {
+	font-size: 1.75rem;
+	text-align: center;
+
+}
+
 /* Newsletter Optin Form */
 
 *:focus {
@@ -271,6 +283,8 @@ button {
   background-color: #D8D86F; 
   width: 150px;
   border-radius: 0 10px 10px 0;
+  font-weight: 1000;
+  font-size:22px;
   &:hover {
   	background-color: #079dbf
   }
@@ -329,14 +343,29 @@ button {
   padding: 0.5em 0.75em;
   color: #ffffff;
   cursor: pointer;
-  background-color: #034b5b; 
+  background-color: #D8D86F; 
   width: 100px;
   border-radius: 0 10px 10px 0;
+  font-weight: 1000;
+    font-size: 18px;
   &:hover {
   	background-color: #079dbf
   }
 }
-	/* 3. Specific */
+
+.headline-text {
+			font-size: 2.2rem;
+			text-align: center;
+			
+	}
+	
+	.subheadline-text {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-top: 15px;
+	}
+		
+		
 .wallpaper {
   background-image: none;
 } }
