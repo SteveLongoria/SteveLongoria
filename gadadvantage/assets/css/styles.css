@@ -46,22 +46,45 @@ hr{
 	margin-bottom: 80px;
 }
 
-.hero {
+.our-work, .cta, .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	padding: 50px 100px;
+	padding: 40px 100px;
 }
 
-.our-work {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	padding: 50px 100px;
+.button {
+    background-color: #2196F3;
+    border-radius: 290486px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: "Montserrat", "Quicksand", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    transform-origin: center;
+    transition-duration: 100ms;
+    line-height: 1;
+    padding: 1.2em 1.4em;
+    text-shadow: none;
+    transition-property: box-shadow, transform;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
 }
 
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.cta-headline {
+	font-size: 35px;
+	margin-bottom:30px;
+}
 @media (max-width: 1000px){
 	
 	.hero {
