@@ -311,6 +311,12 @@ header nav li:last-child{
 
 .reviews{
 	background-color: #fff;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom:20px;
+    padding: 0 .9375rem;
+    font-size: 30px;
 }
 
 .reviews .quote{
