@@ -60,6 +60,24 @@
     text-align: center;
 		}
 		
+		.countdown-container {
+  color: #fff;
+  text-align: center;
+}
+
+.countdown-container li {
+  display: inline-block;
+  font-size: 1.3em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown-container li span {
+  display: block;
+  font-size: 3rem;
+}
+		
 		</style>
   </head>
   <body>
@@ -70,14 +88,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="wallpaper" class="wallpaper" data-image="images/oregon.jpeg"></div>
 		<div style="display: flex; flex-direction: column;" class="content">
 		<div style="max-width:900px;" class="offer-area">
-		<h1 class="headline-text">How To Get More Customers Online Using Google Ads</h1>
-		<h3 class="subheadline-text">Free 5 Day eCourse shows you the same strategy I used to generate a 970% return on ad spend</h3>
-<div id="casestudy-cta">
+		<center><a href="https://www.amazon.com/dp/B07TKH4LYG" target="_blank"><img src="images/5stepsgoogleadcover.jpg"></center>
+				<center><h3 class="subheadline-text">New Kindle Ebook Is <u>FREE For A Limited-Time</u>!</h3>
+		<div class="countdown-container">
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+		<div id="casestudy-cta">
+<a style="font-weight:1000;" class="button" href="https://www.amazon.com/dp/B07TKH4LYG" target="_blank">
+					Download Now
+	</a> 
+	</div></center>
+<!-- <div id="casestudy-cta">
 		<form action="https://www.getdrip.com/forms/894661559/submissions" method="post" data-drip-embedded-form="894661559">
   <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email..."/> 
   <button type="submit" data-drip-attribute="sign-up-button">SIGN UP</button>
 </form>
-</div> 
+</div> -->
 		</div>
 </div>
 		<div class="content">
@@ -100,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<hr class="hr">
 			<div class="description">
 				<p style="padding:0 0 0 0;">
-					Growing your business online can be confusing and extremely difficult! Check out my blog to stay on top of all of the latest in digital marketing!</p> </div>
+					Growing your business online can be confusing and extremely difficult! <br>Visit my blog to stay on top of all of the latest in digital marketing!</p> </div>
 			<div class="contact">
 			<!-- <form action="https://www.getdrip.com/forms/373331008/submissions" method="post" data-drip-embedded-form="373331008">
   <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email..."/> 
@@ -163,6 +194,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       animation-name: dropIn;
 } </style>
 </noscript>
+<script>
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
+let countDown = new Date('July 1, 2019 23:59:59').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+    }, second)
+    </script>
   </body>
 </html>
