@@ -12,7 +12,7 @@
     <script defer type="text/javascript" src="js/main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2157560-21"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,16 +21,64 @@
 
   gtag('config', 'UA-2157560-21');
 </script>
+
 		
 		<style>
-		.content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
-}
-		</style>
 		
+		#feat-articles {
+			margin-top: -30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#feat-article-title {
+		font-size: 2.25rem;
+		}	
+		.feat-article-li {
+			margin: 5px 0 5px 0;
+		}
+		.feat-article-li > a {
+			text-decoration: underline;
+		}
+		
+		#feat-article-ul {
+			margin: 0 40px 0 40px;
+		}
+		
+		#success-stories {
+			max-width:1000px;
+			display: block;
+			margin: 0 auto;
+			padding: 0 .9375rem;
+		}
+		
+		.success-title {
+		font-size: 2.25rem;
+    margin-top: 140px;
+    margin-bottom: 10px;
+    text-align: center;
+		}
+		
+		.countdown-container {
+  color: #fff;
+  text-align: center;
+}
+
+.countdown-container li {
+  display: inline-block;
+  font-size: 1.3em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.countdown-container li span {
+  display: block;
+  font-size: 3rem;
+}
+		
+		</style>
   </head>
   <body>
   <!-- Google Tag Manager (noscript) -->
@@ -38,7 +86,98 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div id="wallpaper" class="wallpaper" data-image="images/oregon.jpeg"></div>
+	<!--	<div style="display: flex; flex-direction: column;" class="content">
+		<div style="max-width:900px;" class="offer-area">
+		<center><a href="https://www.amazon.com/dp/B07TKH4LYG" target="_blank"><img style="max-width:350px;" src="images/5stepsgoogleadcover.jpg"></center>
+				<center><h3 class="subheadline-text">New Kindle Ebook Is <u><em>FREE For A Limited-Time</em></u>!</h3>
+		<div class="countdown-container">
+  <ul>
+    <li><span id="days"></span>days</li>
+    <li><span id="hours"></span>Hours</li>
+    <li><span id="minutes"></span>Minutes</li>
+    <li><span id="seconds"></span>Seconds</li>
+  </ul>
+</div>
+		<div id="casestudy-cta">
+<a style="font-weight:1000;" class="button" href="https://www.amazon.com/dp/B07TKH4LYG" target="_blank">
+					Download Now
+	</a> 
+	</div></center>
+ <div id="casestudy-cta">
+		<form action="https://www.getdrip.com/forms/894661559/submissions" method="post" data-drip-embedded-form="894661559">
+  <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email..."/> 
+  <button type="submit" data-drip-attribute="sign-up-button">SIGN UP</button>
+</form>
+</div> 
+		</div>
+</div>-->
 		<div class="content">
+		<aside class="side">
+			<figure id="picture" class="picture">
+				<div class="picture-shadow"></div>
+				<img id="pictureImage" class="picture-image"
+						 src="images/steve.jpeg"
+						 alt="Portrait of Steve Longoria"
+						 width="320"
+						 height="320">
+			</figure>
+		</aside>
+		<main class="about">
+			<h1 class="name">
+				Hi, I'm Steve Longoria
+			</h1>
+			<p style="padding:0 0 0 0;" class="job">
+				 Marketing Strategist & Publisher
+			<hr class="hr">
+			<div class="description">
+				<p style="padding:0 0 0 0;">
+					Growing your business online can be confusing and extremely difficult. <br>Visit my blog to stay on top of all of the latest in digital marketing.</p> </div>
+			<div class="contact">
+			<!-- <form action="https://www.getdrip.com/forms/373331008/submissions" method="post" data-drip-embedded-form="373331008">
+  <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email..."/> 
+  <button type="submit" data-drip-attribute="sign-up-button">SUBMIT</button>
+</form> -->
+	<a style="font-weight:1000;" class="button" href="https://blog.stevelongoria.net/" target="_blank">
+					Visit The Blog
+	</a> 
+			</div>
+	<ul class="social">
+  <li style="list-style-type: none;">
+	<a href="https://twitter.com/stevelongoria">
+      <i class="fab fa-twitter"></i>
+	</a> </li>
+	<li style="list-style-type: none;"> <a href="https://stevelongoria.net/gadadvantage/">
+      <i class="fa fa-book"></i>
+    </a>
+	</li> <li style="list-style-type: none;">
+    <a href="https://blog.stevelongoria.net">
+      <i class="fa fa-align-left"></i>
+	</a> </li>
+	</ul>
+		</main>
+</div>
+
+<!-- Featured Blog Posts <div id="feat-articles">
+<div id="feat-article-title">
+	<h1>From The Blog</h1>
+	<center><hr class="hr"></center>	
+</div>
+<div id="feat-article-ul">
+<ul>
+	<li class="feat-article-li"><i class="fa fa-hand-point-right"></i> <a href="https://blog.stevelongoria.net/2019/07/01/what-kind-of-content-goes-on-small-business-website-homepage/" target="_blank">What kind of content should a small business place on the homepage of their website?</a> <strong>New</strong></li>
+	<li class="feat-article-li"><i class="fa fa-hand-point-right"></i> <a href="https://blog.stevelongoria.net/2019/06/26/you-want-to-freelance-but-you-have-no-skills/" target="_blank">You want to start freelancing but have no skills, what should you do?</a> <strong>New</strong></li>
+	<li class="feat-article-li"><i class="fa fa-hand-point-right"></i> <a href="https://blog.stevelongoria.net/2019/06/21/setup-structure-google-ad-campaign-ad-group-example/" target="_blank">How should you setup and structure Ad Groups for your Google Ad Campaign? Example provided</a> <strong>New</strong></li>
+	<li class="feat-article-li"><i class="fa fa-hand-point-right"></i> <a href="https://blog.stevelongoria.net/2019/06/13/should-you-use-google-tag-manager/" target="_blank">Should you use Google Tag Manager?</a></li>
+	<li class="feat-article-li"><i class="fa fa-hand-point-right"></i> <a href="https://blog.stevelongoria.net/2019/06/07/google-ad-campaign-ad-schedule/" target="_blank">What should your Google Ad Campaign's Ad Schedule be?</a></li>
+</ul>
+</div>
+		
+</div> -->
+<div id="success-stories">
+<h1 class="success-title">Success Stories</h1>
+<center><hr class="hr"></center>
+<script src="https://fast.wistia.com/embed/medias/ya7stfushu.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ya7stfushu seo=false videoFoam=true" style="margin-top:10px;height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ya7stfushu/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+</div>
 <div id="about">
 		<h1 class="about-title">About Me</h1>
 		<center><hr class="hr"></center>
@@ -56,10 +195,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>I try to spend a couple hours a week developing my coding chops. I really enjoy coding up my own landing pages and websites for projects I'm working on. Feel free to browse <a style="text-decoration: underline;" href="https://github.com/stevelongoria" target="_blank">my Github profile here</a>.</p>
 	</div>
 	</div>
-	</div>
 
 <footer>
-	<p class="footer-text">Copyright &copy; 2019 SteveLongoria.net. </br>All Rights Reserved.</br><a href="https://www.freeprivacypolicy.com/privacy/view/0a8f52687c01c60e85ea3a21c6677e78" target="_blank">Privacy Policy</a></p>
+	<p class="footer-text">Copyright &copy; 2019 SteveLongoria.net. </br>All Rights Reserved.</br><a href="index.html" target="_blank"><u>Home</u></a> | <a href="https://stevelongoria.net/gadadvantage/" target="_blank"><u>Ebook</u> | <a href="https://stevelongoria.typeform.com/to/hRc7zg" target="_blank"><u>Contact</u></a></br>
+	<a href="https://www.freeprivacypolicy.com/privacy/view/0a8f52687c01c60e85ea3a21c6677e78" target="_blank"><u>Privacy Policy</u></a></p>
 
 </footer>
 		
@@ -74,6 +213,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       animation-name: dropIn;
 } </style>
 </noscript>
-
   </body>
 </html>
+
