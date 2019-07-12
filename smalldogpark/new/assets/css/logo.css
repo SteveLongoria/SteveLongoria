@@ -1,0 +1,11 @@
+.logo {
+	display: flex;
+	align-items: center;
+	justify-contet: center;
+}
+
+@media (max-width: 1000px){
+	.logo{
+		margin-bottom: 18px;
+	}
+}
