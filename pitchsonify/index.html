@@ -85,18 +85,7 @@ button {
   <button type="submit" value="Subscribe"/>Sign Up</button>
 </form>
 
-<!-- GetResponse HTML Form Code 
-<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
-	<!-- Email field (required) -->
-	email: <input type="text" name="email"/><br/>
-	<!-- List token -->
-	<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
-	<input type="hidden" name="campaign_token" value="8HUpN" />
-	<!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
-	<input type="hidden" name="start_day" value="0" />
-	<!-- Subscriber button -->
-	<input type="submit" value="Subscribe"/>
-</form> -->
+
 	</section>
 
 
@@ -122,7 +111,7 @@ button {
       <li>Dedicated Account Success Manager</li>
       <li>Two Design Revisions</li>
       <li class="gray">
-        <button>Add to Cart</button>
+        <button class="trigger">Add to Cart</button>
       </li>
     </ul>
   </div>
@@ -155,7 +144,12 @@ button {
     </ul>
   </div>
 </div>
-
+<div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1>Hello, I am a modal!</h1>
+        </div>
+    </div>
 
 	<section class="reviews">
 		<h3 class="title">What others say:</h3>
@@ -181,7 +175,25 @@ button {
 		</ul>
 		<p>PITCHSONIFY © 2019. ALL RIGHTS RESERVED</p>
 	</footer>
+<script>
+var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
 
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+    </script>
 </body>
 
 </html>
