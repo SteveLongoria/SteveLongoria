@@ -190,7 +190,19 @@ button {
 <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
-            <h1>Hello, I am a modal!</h1>
+            <h2>Enter your info below:</h2>
+            <form style="display:flex;flex-direction:column;margin-top:30px;" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+	<!-- Name -->
+	Name: <input style="border-style:solid;border-width:1px;max-width: 340px;min-width: 320px;" type="text" name="name"/><br/>
+	<!-- Email field (required) -->
+	Email: <input style="border-style:solid;border-width:1px;max-width: 340px;min-width: 320px;" type="text" name="email"/><br/>
+	Slide Count: <textarea rows="3" cols="50" style="border-style:solid;border-width:1px;max-width: 340px;min-width: 320px;" name="custom_comment" placeholder="Enter the number of slides you need designed..."></textarea><br/>
+	<!-- List token -->
+	<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+	<input type="hidden" name="campaign_token" value="Worcq" />
+	<!-- Subscriber button -->
+	<input style="border-style:solid;border-width:1.1px;max-width: 340px;min-width: 320px;background-color:#ED8050;border:0;" type="submit" value="Submit"/>
+</form>
         </div>
     </div>
 
