@@ -49,7 +49,7 @@ hr{
 	margin-bottom: 80px;
 }
 
-.our-work, .cta, .hero {
+.about, .our-work, .cta, .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
