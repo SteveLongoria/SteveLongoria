@@ -5,8 +5,84 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Alex Jefferson – Tech Recruiter</title>
 <link rel="stylesheet" type="text/css" href="assets/css/minireset.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+<style>
+
+p {
+	font-size: 16px;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2D6B74;
+    z-index: -1;
+}
+
+#ebookcta {
+    margin: 0 130px 0 130px;
+}
+
+.maintitle {
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.subtitle {
+	font-size: 27px;
+	font-weight: 100;
+}
+
+@media (max-width: 400px) {
+  .hero {
+    display: block;
+  }
+}
+
+
+</style>
   </head>
   <body>
-    <h1>Hello world!</h1>
+  <div class="hero">
+  <div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+	<div id="ecover">
+		<img src="assets/img/clearconversionsecover.jpg">
+	</div>
+	<div id="ebookcta">
+<h1 class="maintitle">You Need A Website That Converts</h1>
+<h3 class="subtitle">Enter Your Email Address For Instant Access To Clear Conversions</h3>
+<form action="https://www.getdrip.com/forms/836415528/submissions" method="post" data-drip-embedded-form="836415528">
+<input type="email" id="drip-email" name="fields[email]" value="" placeholder="Enter your email...">
+<input type="hidden" id="gclidInput" name="fields[gclid]" value="">
+<button type="submit" data-drip-attribute="sign-up-button">SUBMIT</button>
+</form>
+<p style="
+    text-align: center;
+    margin: 15px;
+    font-weight: -500;
+    color: darkgray;
+"><a href="https://stevelongoria.net/googlead5step/" target="_blank"><em><u>No thanks, show me what else you have available for free!</u></em></a></p>
+</div>
+    
+
+  </div>
   </body>
 </html>
