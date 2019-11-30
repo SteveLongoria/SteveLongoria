@@ -71,8 +71,11 @@ button {
     padding: 0 .9375rem;
 }
 
-.about-content {
-	
+.about, .our-work, .cta, .hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px 100px;
 }
 
 @media (max-width: 600px){
@@ -96,6 +99,13 @@ button {
 textarea {
 		border: 1px solid black;
     width: 319px;
+}
+
+.about, .our-work, .cta, .hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px 26px;
 }
 
 }
