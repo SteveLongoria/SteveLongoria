@@ -54,8 +54,7 @@ hr{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	padding: 25px 20px;
+	padding: 25px 126px;
 }
 
 .button {
@@ -131,7 +130,13 @@ hr{
 		padding: 50px 17px;
 	}
 	
+	.about {
+		padding: 25px 20px;
+	}
 	
+	.cta-headline, .cta {
+		padding: 0;
+	}
 
 }
 
