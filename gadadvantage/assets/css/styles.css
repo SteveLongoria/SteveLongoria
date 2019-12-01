@@ -9,16 +9,20 @@
 }
 
 html{
-	font: normal 18px sans-serif;
+	font: normal 16px sans-serif;
 	color: #555;
 }
 
-ul, nav{
-	list-style: none;
+h1 {
+	margin-bottom: 10px;
+}
+
+ul {
+	margin: 20px;
+	font-size: 19px;
 }
 
 a{
-	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
 
@@ -27,13 +31,16 @@ a{
 
 a:hover{
 	opacity: 1;
+	color: #ffffff;
+  text-decoration: none;
+    
 }
 
 a.btn{
 	color: #fff;
 	border-radius: 4px;
 	text-transform: uppercase;
-	background-color: #2196F3;
+	background-color: #2D6B74;
 	font-weight: 800;
 	text-align: center;
 }
@@ -41,17 +48,16 @@ a.btn{
 hr{
 	width: 150px;
 	height: 2px;
-	background-color: #2196F3;
+	background-color: #2D6B74;
 	border: 0;
 	margin-bottom: 80px;
 }
 
-.our-work, .cta, .hero {
+.about, .our-work, .cta, .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	padding: 25px 20px;
+	padding: 25px 100px;
 }
 
 .button {
@@ -74,6 +80,7 @@ hr{
     user-select: none;
     vertical-align: top;
     white-space: nowrap;
+    width: 400px;
     will-change: box-shadow, transform;
 }
 
@@ -93,6 +100,16 @@ hr{
 #cclogos {
 	margin-bottom: 1em;
 }
+
+.flowchart, .flowchart-img{
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+
 
 
 @media (max-width: 1000px){
@@ -117,7 +134,17 @@ hr{
 		padding: 50px 17px;
 	}
 	
+	.about {
+		padding: 25px 20px;
+	}
 	
+	.cta-headline, .cta {
+		padding: 0;
+	}
+	
+	.button {
+		width: 80vw;
+	}
 
 }
 
@@ -130,11 +157,11 @@ section h3.title{
 }
 
 section p{
-	max-width: 1100px;
-	text-align: left;
-	margin-bottom: 35px;
-	padding: 0 20px;
-	line-height: 2;
+		max-width: 1100px;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 19px;
 }
 
 ul.grid{
@@ -215,6 +242,13 @@ header nav li:last-child{
 	min-height: 100vh;
 	color: #fff;
 	text-align: center;
+	display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+
+#ebookcta {
+	margin: 0 130px 0 130px;
 }
 
 .hero .background-image{
@@ -224,7 +258,7 @@ header nav li:last-child{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	background-color: #2196F3;
+	background-color: #2D6B74;
 	z-index: -1;
 }
 
@@ -242,12 +276,13 @@ header nav li:last-child{
 .hero h1{
 	font: bold 60px 'Open Sans', sans-serif;
 	margin-bottom: 15px;
-	max-width: 1100px;
+	max-width: 1000px;
 }
 
 .hero h3{
-	font: normal 28px 'Open Sans', sans-serif;
+	font: normal 30px 'Open Sans', sans-serif;
 	margin-bottom: 40px;
+	max-width: 900px;
 }
 
 .hero a.btn{
@@ -258,10 +293,18 @@ header nav li:last-child{
 
 	.hero{
 		min-height: 600px;
+		flex-direction: column;
+		padding: 20px 10px 10px 10px;
+	}
+	
+	#ebookcta {
+		margin: 10px 0 30px 0;
 	}
 
 	.hero h1{
-		font-size: 48px;
+		font-size: 40px;
+    margin-bottom: 35px;
+		margin-top: 35px;
 	}
 
 	.hero h3{
