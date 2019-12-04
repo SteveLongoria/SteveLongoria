@@ -9,16 +9,14 @@
 }
 
 html{
-	font: normal 16px sans-serif;
+	font: normal 18px sans-serif;
 	color: #555;
+	line-height: 1.5;
 }
 
 ul {
-	margin-left:30px;
-}
-
-li {
-	margin-bottom:15px;
+	margin-left:50px;
+	font-size:18px;
 }
 
 a{
@@ -58,6 +56,13 @@ section{
 	padding: 125px 100px;
 }
 
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+
 @media (max-width: 1000px){
 
 	section{
@@ -71,6 +76,10 @@ section{
 	section{
 		padding: 80px 30px;
 	}
+	
+	.flex-grid {
+    display: block;
+  }
 
 }
 
@@ -115,11 +124,13 @@ section{
 .hero h1{
 	font: bold 55px 'Open Sans', sans-serif;
 	margin-bottom: 15px;
+	max-width:900px;
 }
 
 .hero h3{
 	font: normal 23px 'Open Sans', sans-serif;
 	margin-bottom: 40px;
+	max-width:600px;
 }
 
 .hero a.btn{
@@ -156,15 +167,82 @@ Sales Copy
 	}
 	
 #salescopy h1 {
-	font-size:30px;
+	font-size:35px;
 	margin: 10px;
+	text-align: center;
+}
+
+#salescopy h3 {
+	margin: 10px;
+	font-size:23px;
 }
 
 #salescopy {
 	padding-top: 15px;
 }
 
+#salescopy a.btn{
+	padding: 20px 46px;
+	margin: 10px;
+}
 
+/*-------------
+	About
+--------------*/
+
+.about p {
+		font-size:18px;
+		margin: 10px;
+	}
+	
+.about h1 {
+	font-size:30px;
+	margin: 10px;
+}
+
+.about h3 {
+	margin: 10px;
+	font-size:23px;
+}
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff;
+}
+
+.reviews .quote{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reviews .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1000px){
+
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
+	}
+
+}
 
 /*-------------
  	Footer
