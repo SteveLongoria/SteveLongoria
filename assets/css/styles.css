@@ -2,6 +2,15 @@
  	General
 -------------*/
 
+@font-face {
+    font-family: 'kollektifregular';
+    src: url('kollektif-webfont.woff2') format('woff2'),
+         url('kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +18,12 @@
 }
 
 html {
-  font: normal 16px sans-serif;
+  font: normal 16px 'kollektifregular', sans-serif;
   color: #555;
+}
+
+body {
+	font-family: 'kollektifregular', sans-serif;
 }
 
 h1 {
@@ -63,7 +76,7 @@ hr {
   color: #fff;
   display: inline-block;
   font-size: 1rem;
-  font-family: "Montserrat", "Quicksand", sans-serif;
+  font-family: 'kollektifregular', sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   transform-origin: center;
@@ -122,7 +135,7 @@ hr {
 section h3.title {
   color: #414a4f;
   text-transform: capitalize;
-  font: bold 32px 'Open Sans', sans-serif;
+  font: bold 32px 'kollektifregular', sans-serif;
   margin-bottom: 35px;
   text-align: center;
 }
@@ -188,13 +201,13 @@ ul.grid {
 }
 
 .hero h1 {
-  font: bold 60px 'Open Sans', sans-serif;
+  font: bold 60px 'kollektifregular', sans-serif;
   margin-bottom: 15px;
   max-width: 1000px;
 }
 
 .hero h3 {
-  font: normal 30px 'Open Sans', sans-serif;
+  font: normal 30px 'kollektifregular', sans-serif;
   margin-bottom: 40px;
   max-width: 900px;
 }
