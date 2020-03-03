@@ -176,7 +176,16 @@ figcaption {
 
 .button.hero-button {
   width: 400px;
+  background-color: #ae8c35;
   font-size: 23px;
+}
+
+.button.hero-button.cc-color {
+  background-color: #2d6b74;
+}
+
+.button.hero-button.gaa-color {
+  background-color: #5bc2eb;
 }
 
 .project-content {
@@ -618,8 +627,8 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/hero.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/googlead5step-hero.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/googlead5step-hero.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   color: #fff;
@@ -741,6 +750,7 @@ figcaption {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background-color: #222;
   text-align: center;
 }
 
@@ -877,6 +887,10 @@ figcaption {
   align-items: center;
 }
 
+.heading-6 {
+  font-size: 55px;
+}
+
 .column-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -897,8 +911,24 @@ figcaption {
   align-items: center;
 }
 
+.heading-7 {
+  font-size: 55px;
+}
+
 .body-2 {
   font-family: 'Kollektif webfont', sans-serif;
+}
+
+.text-block {
+  color: #fff;
+}
+
+.italic-text {
+  text-decoration: underline;
+}
+
+.text-block-2 {
+  color: #fff;
 }
 
 @media screen and (max-width: 991px) {
